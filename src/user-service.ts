@@ -2,6 +2,7 @@ import { usersCol, UserModel, lawyerCol } from "./collections";
 import * as admin from "firebase-admin";
 export async function getUserTokenById(userId: string): Promise<string> {
   let user = await usersCol.doc(userId).get();
+  console.log("TS-UserId: " + userId);
   return Promise.resolve(user.data()?.token!);
 }
 

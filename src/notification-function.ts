@@ -4,7 +4,7 @@ import { getUserByLawyerId, getUserTokenById } from "./user-service";
 
 exports.notificationStartAppointment = functions.https.onCall(
   async (request, response) => {
-    console.log("Start appointment notification send");
+    console.log("Start appointment notification send vvv");
     // let lawyerName = request.lawyerName;
     // let roomName = request.roomName;
     // let agoraToken = request.token;
